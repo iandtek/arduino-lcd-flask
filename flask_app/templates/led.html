@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block head %}
+<title>LED Status</title>
+{% endblock %} {% block body %}
+<div class="content">
+  <h1>LED STATUS</h1>
+  {% if led_is_on %}
+  <h2>ON</h2>
+  <a href="led/0">Turn it OFF</a>
+  {% else %}
+  <h2>OFF</h2>
+  <a href="led/1">Turn it ON</a>
+  {% endif %}
+</div>
+{% endblock %}

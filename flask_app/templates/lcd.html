@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block head %}
+<title>LED Status</title>
+{% endblock %} {% block body %}
+<div class="content">
+  <form>
+    <input
+      type="text"
+      name="message"
+      placeholder="Type your message here"
+      value="{{message}}"
+    />
+    <input type="submit" />
+  </form>
+</div>
+{% endblock %}
